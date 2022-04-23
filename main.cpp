@@ -88,22 +88,16 @@ int main() {
             }
             else if (word[i] == character_1) {
                 
-                if (i == word.length()-1 && count > 1)
-                
+                if (i == word.length()-1 && count > 1)  
                   int_to_char(count, array, j);
-                    
-    
-    
-                    
                 else if (i == word.length()-1 && count == 1)
                     array[j].push_back(word[i]);
                 else if (count >= 0)
                     count ++;
+                
             }
-    
         }
     }
-    
     for(auto n: array)
         cout << n << "\n";
 
